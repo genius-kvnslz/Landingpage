@@ -3,27 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beratung Fenster & Türen – [Dein Name]</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Fenster & Türen – Beratung von [Kevin Schulz]</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #1d4ed8;
+    }
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    section {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: #1d4ed8;
+      margin-bottom: 10px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    blockquote {
+      border-left: 4px solid #1d4ed8;
+      padding-left: 12px;
+      color: #666;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+    form button {
+      background-color: #1d4ed8;
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    form button:hover {
+      background-color: #2563eb;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #999;
+      padding: 20px;
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
-  <header class="bg-white shadow p-6 text-center">
-    <h1 class="text-3xl font-bold text-blue-700">Fenster & Türen – Persönlich beraten</h1>
-    <p class="mt-2 text-lg">mit [Dein Name] aus Bonn/Rhein-Sieg</p>
+<body>
+  <header>
+    <h1>Fenster & Türen – Persönlich beraten</h1>
+    <p>mit [Kevin Schulz] aus Bonn/Rhein-Sieg</p>
   </header>
 
-  <main class="max-w-3xl mx-auto p-6 space-y-10">
-
-    <!-- Über mich -->
-    <section class="bg-white p-6 rounded-2xl shadow">
-      <h2 class="text-xl font-semibold text-blue-700 mb-2">Wer ich bin</h2>
-      <p>Hallo, mein Name ist [Dein Name]. Seit über [X] Jahren berate ich Kundinnen und Kunden im Raum Bonn/Rhein-Sieg rund um Fenster und Türen – persönlich, ehrlich und mit dem Fokus auf langlebige Qualität. Als Teil der Genius Fenster und Türen GmbH begleite ich Sie von der Planung bis zur Montage.</p>
+  <main>
+    <section>
+      <h2>Wer ich bin</h2>
+      <p>Hallo, mein Name ist [Kevin Schulz]. Seit über [6] Jahren berate ich Kundinnen und Kunden im Raum Bonn/Rhein-Sieg rund um Fenster und Türen – persönlich, ehrlich und mit dem Fokus auf langlebige Qualität. Als Teil der Genius Fenster und Türen GmbH begleite ich Sie von der Planung bis zur Montage.</p>
     </section>
 
-    <!-- Leistungen -->
-    <section class="bg-white p-6 rounded-2xl shadow">
-      <h2 class="text-xl font-semibold text-blue-700 mb-2">Was ich Ihnen biete</h2>
-      <ul class="list-disc list-inside space-y-1">
+    <section>
+      <h2>Was ich Ihnen biete</h2>
+      <ul>
         <li>Fenster & Haustüren aus eigener Fertigung (Made in NRW)</li>
         <li>Kostenlose Beratung vor Ort</li>
         <li>Montage durch geschulte Fachmonteure</li>
@@ -31,31 +101,28 @@
       </ul>
     </section>
 
-    <!-- Kundenmeinung -->
-    <section class="bg-white p-6 rounded-2xl shadow">
-      <h2 class="text-xl font-semibold text-blue-700 mb-2">Was Kunden sagen</h2>
-      <blockquote class="italic text-gray-600 border-l-4 border-blue-500 pl-4">
-        „Die Beratung war ehrlich und professionell, der Einbau lief reibungslos. Ich empfehle Herrn [Nachname] gerne weiter!“<br>
-        <span class="not-italic font-semibold">– Familie M., Sankt Augustin</span>
+    <section>
+      <h2>Was Kunden sagen</h2>
+      <blockquote>
+        „Die Beratung war ehrlich und professionell, der Einbau lief reibungslos. Ich empfehle Genius gerne weiter!“<br>
+        <strong>– Familie M., Sankt Augustin</strong>
       </blockquote>
     </section>
 
-    <!-- Kontaktformular -->
-    <section class="bg-white p-6 rounded-2xl shadow">
-      <h2 class="text-xl font-semibold text-blue-700 mb-4">Jetzt Termin vereinbaren</h2>
-      <form class="space-y-4">
-        <input type="text" placeholder="Ihr Name" class="w-full p-3 border rounded-xl">
-        <input type="tel" placeholder="Telefonnummer" class="w-full p-3 border rounded-xl">
-        <input type="text" placeholder="PLZ / Ort" class="w-full p-3 border rounded-xl">
-        <textarea placeholder="Nachricht (optional)" class="w-full p-3 border rounded-xl"></textarea>
-        <button type="submit" class="bg-blue-700 text-white px-6 py-3 rounded-xl hover:bg-blue-800">Absenden</button>
+    <section>
+      <h2>Jetzt Termin vereinbaren</h2>
+      <form>
+        <input type="text" placeholder="Kevin Schulz" required>
+        <input type="tel" placeholder="02241/486827" required>
+        <input type="text" placeholder="53842 / Troisdorf">
+        <textarea placeholder="Nachricht (optional)"></textarea>
+        <button type="submit">Absenden</button>
       </form>
     </section>
-
   </main>
 
-  <footer class="text-center text-sm text-gray-500 mt-10 p-4">
-    © 2025 [Dein Name] · Impressum · Datenschutz
+  <footer>
+    © 2025 [Kevin Schulz] · Impressum · Datenschutz
   </footer>
 </body>
 </html>
