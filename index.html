@@ -2,164 +2,210 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kevin Schulz – Fenster & Türen</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-<style>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    header {
+      background-color: #b80000;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header img {
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 4px solid white;
+    }
+
+    h1 {
+      margin: 0.5rem 0;
+      font-size: 2rem;
+    }
+
+    .intro {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .leistungen {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      padding: 2rem 1rem;
+      background-color: #fff;
+    }
+
+    .leistung {
+      flex: 1 1 250px;
+      max-width: 300px;
+      background-color: #f1f1f1;
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .leistung i {
+      font-size: 2rem;
+      color: #b80000;
+      margin-bottom: 0.5rem;
+    }
+
+    #kontakt {
+      padding: 3rem 1rem;
+      background-color: #fff;
+    }
+
     form {
-  max-width: 500px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  font-size: 1rem;
-}
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      font-size: 1rem;
+    }
 
-form input,
-form textarea {
-  width: 100%;
-  padding: 0.7rem;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 0.7rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
 
-form label {
-  display: flex;
-  flex-direction: column;
-  font-weight: 500;
-}
+    form label {
+      display: flex;
+      flex-direction: column;
+      font-weight: 500;
+    }
 
-form button {
-  background-color: #b80000;
-  color: white;
-  border: none;
-  padding: 1rem;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-}
+    form button {
+      background-color: #b80000;
+      color: white;
+      border: none;
+      padding: 1rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
 
-form button:hover {
-  background-color: #990000;
-}
+    form button:hover {
+      background-color: #990000;
+    }
 
+    .cta-button {
+      background-color: #b80000;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+
+    .cta-button:hover {
+      background-color: #990000;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 1rem;
+      background-color: #f0f0f0;
+    }
+
+    a {
+      color: #b80000;
+    }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- Kopfbereich -->
-  <header>
-    <img src="foto.jpg" alt="Kevin Schulz">
-    <h1>Kevin Schulz</h1>
-    <p>Fachberater für Fenster & Türen im Raum Bonn</p>
-  </header>
+<header>
+  <img src="Foto.jpg" alt="Kevin Schulz">
+  <h1>Kevin Schulz</h1>
+  <p>Ihr Ansprechpartner für Fenster & Türen</p>
+</header>
 
-  <!-- Kontaktinfos -->
-  <section class="contact-icons">
-    <p><i class="fas fa-phone"></i> 02241 4868-27</p>
-    <p><i class="fas fa-envelope"></i> <a href="mailto:kevin.schulz@genius-fenster.de" style="color:#b80000;">kevin.schulz@genius-fenster.de</a></p>
-  </section>
+<section class="intro">
+  <p>Ich helfe Ihnen dabei, die passenden Fenster und Türen für Ihr Zuhause zu finden – persönlich, ehrlich und zuverlässig. Profitieren Sie von über 30 Jahren Erfahrung und eigener Fertigung direkt vor Ort.</p>
+  <a href="#kontakt" class="cta-button" onclick="document.querySelector('#kontakt').scrollIntoView({ behavior: 'smooth' }); return false;">Jetzt Kontakt aufnehmen</a>
+</section>
 
-  <!-- Vorstellung & Call-to-Action -->
-  <section style="text-align: center;">
-    <h2>Beratung, wie sie sein sollte</h2>
-    <p>Unverbindlich, kompetent und mit über 30 Jahren Erfahrung in der Fenster- und Türenbranche.</p>
-    <a href="#kontakt" class="cta-button">Jetzt Kontakt aufnehmen</a>
-  </section>
+<section class="leistungen">
+  <div class="leistung">
+    <i class="fas fa-door-closed"></i>
+    <h3>Haustüren</h3>
+    <p>Moderne, sichere Türen in vielen Designs – individuell für Sie gefertigt.</p>
+  </div>
+  <div class="leistung">
+    <i class="fas fa-window-restore"></i>
+    <h3>Kunststofffenster</h3>
+    <p>Qualität aus eigener Produktion – energieeffizient und langlebig.</p>
+  </div>
+  <div class="leistung">
+    <i class="fas fa-tools"></i>
+    <h3>Montage & Beratung</h3>
+    <p>Kostenlose Beratung vor Ort und fachgerechte Montage durch eigene Teams.</p>
+  </div>
+</section>
 
-  <!-- Leistungen -->
-  <section>
-    <h2 style="text-align:center;">Ihre Vorteile mit Genius Fenster & Türen</h2>
-    <div class="leistungen">
-      <div>
-        <i class="fas fa-comments"></i>
-        <h3>Individuelle Beratung</h3>
-        <p>Wir nehmen uns Zeit für Ihr Anliegen – persönlich, ehrlich und lösungsorientiert.</p>
-      </div>
-      <div>
-        <i class="fas fa-industry"></i>
-        <h3>Eigene Produktion</h3>
-        <p>Unsere Fenster und Türen werden regional gefertigt – Qualität aus erster Hand.</p>
-      </div>
-      <div>
-        <i class="fas fa-star"></i>
-        <h3>30 Jahre Erfahrung</h3>
-        <p>Profitieren Sie von fundierter Expertise und professioneller Umsetzung.</p>
-      </div>
-    </div>
-  </section>
+<section id="kontakt">
+  <h2 style="text-align:center; margin-bottom:1rem;">Kontakt</h2>
+  <form action="https://formsubmit.co/kevin.schulz@genius-fenster.de" method="POST">
 
-  <!-- Kontaktformular -->
-  <section id="kontakt">
-    <h2 style="text-align:center;">Kontaktformular</h2>
-    <form action="https://formsubmit.co/kevin.schulz@genius-fenster.de" method="POST" style="max-width:1000px; margin:auto; display:flex; flex-direction:column; gap:1rem; font-size: 1rem;">
+    <label>Ihr Name*  
+      <input type="text" name="name" required>
+    </label>
 
-  <label>Ihr Name*<br>
-    <input type="text" name="name" required>
-  </label>
+    <label>Ihre Telefonnummer  
+      <input type="tel" name="telefon">
+    </label>
 
-  <label>Ihre Telefonnummer<br>
-    <input type="tel" name="telefon">
-  </label>
+    <label>Ihre E-Mail*  
+      <input type="email" name="email" required>
+    </label>
 
-  <label>Ihre E-Mail*<br>
-    <input type="email" name="email" required>
-  </label>
+    <label>Ihre Nachricht*  
+      <textarea name="message" rows="5" required></textarea>
+    </label>
 
-  <label>Ihre Nachricht*<br>
-    <textarea name="message" rows="5" required></textarea>
-  </label>
+    <label style="font-size: 0.9rem; font-weight: normal;">
+      <input type="checkbox" name="datenschutz" required>
+      Ich habe die <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a> gelesen und stimme zu.*
+    </label>
 
-  <label style="font-size: 0.9rem;">
-    <input type="checkbox" name="datenschutz" required>
-    Ich habe die <a href="datenschutz.html" target="_blank" style="color:#b80000;">Datenschutzerklärung</a> gelesen und stimme zu.*
-  </label>
+    <input type="hidden" name="_next" value="https://genius-kvnslz.github.io/Landingpage/danke.html">
+    <input type="hidden" name="_captcha" value="false">
 
-  <input type="hidden" name="_next" value="https://genius-kvnslz.github.io/Landingpage/danke.html">
-  <input type="hidden" name="_captcha" value="false">
+    <button type="submit">Absenden</button>
+  </form>
+</section>
 
-  <button type="submit" style="background-color:#b80000; color:white; border:none; padding:1rem; border-radius:5px;">Absenden</button>
-<form action="https://formsubmit.co/kevin.schulz@genius-fenster.de" method="POST">
+<footer>
+  <p><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+</footer>
 
-  <label>Ihr Name*  
-    <input type="text" name="name" required>
-  </label>
-
-  <label>Ihre Telefonnummer  
-    <input type="tel" name="telefon">
-  </label>
-
-  <label>Ihre E-Mail*  
-    <input type="email" name="email" required>
-  </label>
-
-  <label>Ihre Nachricht*  
-    <textarea name="message" rows="5" required></textarea>
-  </label>
-
-  <label style="font-size: 0.9rem; font-weight: normal;">
-    <input type="checkbox" name="datenschutz" required>
-    Ich habe die <a href="datenschutz.html" target="_blank" style="color:#b80000;">Datenschutzerklärung</a> gelesen und stimme zu.*
-  </label>
-
-  <input type="hidden" name="_next" value="https://genius-kvnslz.github.io/REPO-NAME/danke.html">
-  <input type="hidden" name="_captcha" value="false">
-
-  <button type="submit">Absenden</button>
-</form>
-
-
-
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Kevin Schulz – Genius Fenster & Türen GmbH</p>
-    <p><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
-  </footer>
+<script>
+  const form = document.querySelector("form");
+  form.addEventListener("submit", function() {
+    alert("Vielen Dank! Ihre Nachricht wurde gesendet.");
+  });
+</script>
 
 </body>
 </html>
