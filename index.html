@@ -122,7 +122,35 @@ form button:hover {
   <input type="hidden" name="_captcha" value="false">
 
   <button type="submit" style="background-color:#b80000; color:white; border:none; padding:1rem; border-radius:5px;">Absenden</button>
+<form action="https://formsubmit.co/kevin.schulz@genius-fenster.de" method="POST">
+
+  <label>Ihr Name*  
+    <input type="text" name="name" required>
+  </label>
+
+  <label>Ihre Telefonnummer  
+    <input type="tel" name="telefon">
+  </label>
+
+  <label>Ihre E-Mail*  
+    <input type="email" name="email" required>
+  </label>
+
+  <label>Ihre Nachricht*  
+    <textarea name="message" rows="5" required></textarea>
+  </label>
+
+  <label style="font-size: 0.9rem; font-weight: normal;">
+    <input type="checkbox" name="datenschutz" required>
+    Ich habe die <a href="datenschutz.html" target="_blank" style="color:#b80000;">Datenschutzerklärung</a> gelesen und stimme zu.*
+  </label>
+
+  <input type="hidden" name="_next" value="https://genius-kvnslz.github.io/REPO-NAME/danke.html">
+  <input type="hidden" name="_captcha" value="false">
+
+  <button type="submit">Absenden</button>
 </form>
+
 
 
   </section>
