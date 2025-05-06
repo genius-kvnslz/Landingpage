@@ -210,6 +210,21 @@
   form.addEventListener("submit", function() {
     alert("Vielen Dank! Ihre Nachricht wurde gesendet.");
   });
+<script>
+  const form = document.querySelector("form");
+  const checkbox = document.getElementById("datenschutz");
+  const errorText = document.getElementById("datenschutz-error");
+
+  form.addEventListener("submit", function (e) {
+    if (!checkbox.checked) {
+      e.preventDefault();
+      errorText.style.display = "block";
+      checkbox.focus();
+    } else {
+      errorText.style.display = "none";
+      alert("Vielen Dank! Ihre Nachricht wurde gesendet.");
+    }
+  });
 </script>
 
 </body>
